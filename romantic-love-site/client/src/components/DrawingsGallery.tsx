@@ -20,7 +20,7 @@ export function DrawingsGallery() {
       id: 1,
       title: t('drawing1.title', language),
       description: t('drawing1.desc', language),
-      image: '/images/roblox3.jpeg',
+      image: '/images/roblox2.jpeg',
       tilt: -4,
     },
     {
