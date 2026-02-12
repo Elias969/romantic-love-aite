@@ -20,14 +20,14 @@ export function DrawingsGallery() {
       id: 1,
       title: t('drawing1.title', language),
       description: t('drawing1.desc', language),
-      image: 'https://private-us-east-1.manuscdn.com/sessionFile/XFakBhl8I6Jb7VMv9dEomn/sandbox/6ePZtGWMbqURKuSG0oqlqz-img-2_1770903496000_na1fn_Y291cGxlLWlsbHVzdHJhdGlvbg.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80',
+      image: '/images/roblox3.jpeg',
       tilt: -4,
     },
     {
       id: 2,
       title: t('drawing2.title', language),
       description: t('drawing2.desc', language),
-      image: 'https://private-us-east-1.manuscdn.com/sessionFile/XFakBhl8I6Jb7VMv9dEomn/sandbox/6ePZtGWMbqURKuSG0oqlqz-img-3_1770903492000_na1fn_Z2F0by1yb21hbnRpY28.png?x-oss-process=image/resize,w_1920,h_1920/format,webp/quality,q_80',
+      image: '/images/mine.jpeg',
       tilt: 3,
     },
   ];
