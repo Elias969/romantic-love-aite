@@ -1,0 +1,309 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  /* Tema Vivo, Fofo e Leve: Rosa, Vermelho, Branco */
+  --primary: #ff6b9d; /* Rosa vibrante */
+  --primary-foreground: #ffffff;
+  --sidebar-primary: #ff1493; /* Rosa profundo */
+  --sidebar-primary-foreground: #ffffff;
+  --chart-1: #ff6b9d;
+  --chart-2: #ff1493;
+  --chart-3: #ff69b4;
+  --chart-4: #ffb6c1;
+  --chart-5: #ffc0cb;
+  --radius: 1.5rem; /* Mais arredondado para look fofo */
+  --background: #fff5f7; /* Branco rosado muito claro */
+  --foreground: #5a3a4a; /* Marrom escuro suave */
+  --card: #ffffff; /* Branco puro */
+  --card-foreground: #5a3a4a;
+  --popover: #ffffff;
+  --popover-foreground: #5a3a4a;
+  --secondary: #ff69b4; /* Rosa claro */
+  --secondary-foreground: #ffffff;
+  --muted: #ffb6c1; /* Rosa pastel */
+  --muted-foreground: #8b5a6a;
+  --accent: #ff1493; /* Vermelho-rosa vibrante */
+  --accent-foreground: #ffffff;
+  --destructive: #ff6b9d;
+  --destructive-foreground: #ffffff;
+  --border: #ffb6c1; /* Rosa pastel para bordas */
+  --input: #fff5f7;
+  --ring: #ff1493;
+  --sidebar: #fff5f7;
+  --sidebar-foreground: #5a3a4a;
+  --sidebar-accent: #ff1493;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #ffb6c1;
+  --sidebar-ring: #ff1493;
+}
+
+.dark {
+  --primary: #ff6b9d;
+  --primary-foreground: #ffffff;
+  --sidebar-primary: #ff1493;
+  --sidebar-primary-foreground: #ffffff;
+  --background: #fff5f7;
+  --foreground: #5a3a4a;
+  --card: #ffffff;
+  --card-foreground: #5a3a4a;
+  --popover: #ffffff;
+  --popover-foreground: #5a3a4a;
+  --secondary: #ff69b4;
+  --secondary-foreground: #ffffff;
+  --muted: #ffb6c1;
+  --muted-foreground: #8b5a6a;
+  --accent: #ff1493;
+  --accent-foreground: #ffffff;
+  --destructive: #ff6b9d;
+  --destructive-foreground: #ffffff;
+  --border: #ffb6c1;
+  --input: #fff5f7;
+  --ring: #ff1493;
+  --chart-1: #ff6b9d;
+  --chart-2: #ff1493;
+  --chart-3: #ff69b4;
+  --chart-4: #ffb6c1;
+  --chart-5: #ffc0cb;
+  --sidebar: #fff5f7;
+  --sidebar-foreground: #5a3a4a;
+  --sidebar-accent: #ff1493;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #ffb6c1;
+  --sidebar-ring: #ff1493;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Lora', serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ff1493;
+  }
+  h1 {
+    @apply text-4xl md:text-5xl font-bold;
+  }
+  h2 {
+    @apply text-3xl md:text-4xl font-bold;
+  }
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      max-width: 1280px;
+    }
+  }
+
+  /* Animações customizadas para tema fofo e romântico */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+  }
+
+  @keyframes glow {
+    0%, 100% { text-shadow: 0 0 10px rgba(255, 107, 157, 0.5); }
+    50% { text-shadow: 0 0 20px rgba(255, 20, 147, 0.8); }
+  }
+
+  @keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    25% { transform: scale(1.1); }
+    50% { transform: scale(1); }
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes particleFloat {
+    0% {
+      opacity: 0;
+      transform: translateY(0) translateX(0);
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(-100vh) translateX(100px);
+    }
+  }
+
+  @keyframes tilt {
+    0% { transform: rotate(-3deg); }
+    100% { transform: rotate(3deg); }
+  }
+
+  @keyframes tiltLeft {
+    0% { transform: rotate(-5deg); }
+    100% { transform: rotate(-2deg); }
+  }
+
+  @keyframes tiltRight {
+    0% { transform: rotate(5deg); }
+    100% { transform: rotate(2deg); }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite;
+  }
+
+  .animate-heartbeat {
+    animation: heartbeat 1.5s ease-in-out infinite;
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .animate-tilt {
+    animation: tilt 2s ease-in-out infinite;
+  }
+
+  .animate-tilt-left {
+    transform: rotate(-5deg);
+  }
+
+  .animate-tilt-right {
+    transform: rotate(3deg);
+  }
+
+  /* Estilo de seção com divider decorativo */
+  .section-divider {
+    height: 3px;
+    background: linear-gradient(to right, transparent, #ff1493, transparent);
+    margin: 3rem 0;
+  }
+
+  /* Hover effect para elementos interativos */
+  .hover-glow {
+    transition: all 0.3s ease;
+  }
+
+  .hover-glow:hover {
+    text-shadow: 0 0 15px rgba(255, 20, 147, 0.6);
+    color: #ff1493;
+  }
+
+  /* Sombra suave e fofa */
+  .shadow-soft {
+    box-shadow: 0 4px 20px rgba(255, 107, 157, 0.15);
+  }
+
+  /* Scrollbar customizada */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #fff5f7;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #ff6b9d;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ff1493;
+  }
+}
