@@ -19,28 +19,28 @@ export function PhotoGallery() {
   const photos: Photo[] = [
     {
       id: 1,
-      src: '/images/primeiro.jpg',
+      src: '/images/primeiro.jpeg',
       title: t('gallery.photo1', language),
       message: 'O dia em que nossos corações se encontraram. Você mudou minha vida para sempre.',
       tilt: -5,
     },
     {
       id: 2,
-      src: '/images/rir.jpg',
+      src: '/images/rir.jpeg',
       title: t('gallery.photo2', language),
       message: 'Cada momento com você é um presente. Seu sorriso é minha razão de ser feliz.',
       tilt: 4,
     },
     {
       id: 3,
-      src: '/images/kata.jpg',
+      src: '/images/kata.jpeg',
       title: t('gallery.photo3', language),
       message: 'No detalhe está a beleza. Você é meu detalhe favorito da vida.',
       tilt: -3,
     },
     {
       id: 4,
-      src: '/images/nos.jpg',
+      src: '/images/nos.jpeg',
       title: t('gallery.photo4', language),
       message: 'Juntos, somos invencíveis. Você é meu para sempre.',
       tilt: 5,
