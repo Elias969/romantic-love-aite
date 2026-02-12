@@ -19,28 +19,28 @@ export function PhotoGallery() {
   const photos: Photo[] = [
     {
       id: 1,
-      src: 'https://images.unsplash.com/photo-1516846573222-e3c3e5b5a6e5?w=500&h=500&fit=crop',
+      src: '/images/primeiro.jpg',
       title: t('gallery.photo1', language),
       message: 'O dia em que nossos corações se encontraram. Você mudou minha vida para sempre.',
       tilt: -5,
     },
     {
       id: 2,
-      src: 'https://images.unsplash.com/photo-1516846573222-e3c3e5b5a6e5?w=500&h=500&fit=crop',
+      src: '/images/rir.jpg',
       title: t('gallery.photo2', language),
       message: 'Cada momento com você é um presente. Seu sorriso é minha razão de ser feliz.',
       tilt: 4,
     },
     {
       id: 3,
-      src: 'https://images.unsplash.com/photo-1516846573222-e3c3e5b5a6e5?w=500&h=500&fit=crop',
+      src: '/images/kata.jpg',
       title: t('gallery.photo3', language),
       message: 'No detalhe está a beleza. Você é meu detalhe favorito da vida.',
       tilt: -3,
     },
     {
       id: 4,
-      src: 'https://images.unsplash.com/photo-1516846573222-e3c3e5b5a6e5?w=500&h=500&fit=crop',
+      src: '/images/nos.jpg',
       title: t('gallery.photo4', language),
       message: 'Juntos, somos invencíveis. Você é meu para sempre.',
       tilt: 5,
