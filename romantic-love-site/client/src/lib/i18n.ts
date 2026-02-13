@@ -1,4 +1,4 @@
-// Internacionalização: Português BR e Espanhol CL
+
 export type Language = 'pt-BR' | 'es-CL';
 
 export const translations: Record<Language, Record<string, string>> = {
@@ -8,8 +8,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'header.language': 'Idioma',
     
     // Hero Section
-    'hero.title': 'Te Amo Cata',
-    'hero.subtitle': 'um pequeno presente para voce,
+    'hero.title': 'Te Amo',
+    'hero.subtitle': 'Uma história de amor que transcende distâncias',
     'hero.scroll': 'Role para descobrir nossa história',
     
     // Gallery Photos
@@ -21,12 +21,12 @@ export const translations: Record<Language, Record<string, string>> = {
     'gallery.photo4': 'Juntos para sempre',
     
     // Gallery Drawings
-    'drawings.title': 'Eu amor jogar com voce',
-    'drawings.description': 'alguns momentos das nossas gameplays',
+    'drawings.title': 'Nossos Desenhos',
+    'drawings.description': 'Ilustrações que representam nossa história',
     'drawing1.title': 'Almas Gêmeas',
-    'drawing1.desc': 'eu amo jogar com voce, pois eu sinto que estou jogando com uma versao minha homem. temos uma conexao muito grande',
-    'drawing2.title': 'Felicidade',
-    'drawing2.desc': 'eu ficaria ate o fim da minha vida jogando qualquer coisa ao seu lado pois voce é minha companhia favorita.',
+    'drawing1.desc': 'Dois corações unidos por um fio invisível de amor. Representam a conexão profunda entre nós, como se fossemos feitos um para o outro.',
+    'drawing2.title': 'Eternidade',
+    'drawing2.desc': 'Símbolo do amor infinito e da continuidade. Cada volta representa um dia ao seu lado, cada momento precioso que compartilhamos.',
     
     // Love Letters
     'letters.title': 'Cartas de Amor',
@@ -99,7 +99,7 @@ export const translations: Record<Language, Record<string, string>> = {
     
     // Love Letters
     'letters.title': 'Cartas de Amor',
-    'letters.main': 'Mi Amor,\n\nCada día a tu lado es una bendición. Tus ojos me hacen creer en la magia, tu sonrisa es mi razón para despertar. Eres mi amor, mi sueño, mi eternidad.\n\nPara siempre tuyo Cata,\nCon todo mi corazón❤️',
+    'letters.main': 'Mi Amor,\n\nCada día a tu lado es una bendición. Tus ojos me hacen creer en la magia, tu sonrisa es mi razón para despertar. Eres mi amor, mi sueño, mi eternidad.\n\nPara siempre tuyo,\nCon todo mi corazón ❤️',
     'letters.message1': 'Eres la razón por la que creo en el amor verdadero.',
     'letters.message2': 'Cada momento contigo es un regalo que atesoro.',
     'letters.message3': 'Mi corazón es tuyo, ahora y para siempre.',
