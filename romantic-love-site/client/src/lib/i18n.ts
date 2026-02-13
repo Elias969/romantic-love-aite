@@ -77,7 +77,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'header.language': 'Idioma',
     
     // Hero Section
-    'hero.title': 'Te Amo',
+    'hero.title': 'Te Amo Cata',
     'hero.subtitle': 'Una historia de amor que trasciende las distancias',
     'hero.scroll': 'Desplázate para descubrir nuestra historia',
     
@@ -90,7 +90,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'gallery.photo4': 'Juntos para siempre',
     
     // Gallery Drawings
-    'drawings.title': 'Nuestros Dibujos',
+    'drawings.title': 'Nuestros Games',
     'drawings.description': 'Ilustraciones que representan nuestra historia',
     'drawing1.title': 'Almas Gemelas',
     'drawing1.desc': 'Dos corazones unidos por un hilo invisible de amor. Representan la conexión profunda entre nosotros, como si fuéramos hechos el uno para el otro.',
