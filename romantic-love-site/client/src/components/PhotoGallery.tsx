@@ -19,7 +19,7 @@ export function PhotoGallery() {
   const photos: Photo[] = [
     {
       id: 1,
-      src: '/images/primeiro.jpeg',
+      src: '/images/primeiro.jpeg.',
       title: t('gallery.photo1', language),
       message: 'O dia em que nossos corações se encontraram. Você mudou minha vida para sempre.',
       tilt: -5,
