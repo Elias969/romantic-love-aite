@@ -8,7 +8,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'header.language': 'Idioma',
     
     // Hero Section
-    'hero.title': 'Te Amo',
+    'hero.title': 'Te Amo Cata',
     'hero.subtitle': 'Uma história de amor que transcende distâncias',
     'hero.scroll': 'Role para descobrir nossa história',
     
