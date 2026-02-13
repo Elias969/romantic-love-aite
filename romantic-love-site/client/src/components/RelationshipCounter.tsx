@@ -9,16 +9,12 @@ interface TimeUnits {
   seconds: number;
 }
 
-interface RelationshipCounterProps {
-  startDate?: Date;
-}
-
-// ✅ DATA CORRIGIDA
-export function RelationshipCounter({ 
-  startDate = new Date('2025-08-07T00:00:00') 
-}: RelationshipCounterProps) {
+export function RelationshipCounter() {
 
   const { language } = useLanguage();
+
+  // 🔥 DATA FIXA DEFINITIVA
+  const startDate = new Date('2025-08-07T00:00:00-03:00');
 
   const [time, setTime] = useState<TimeUnits>({
     days: 0,
@@ -46,16 +42,15 @@ export function RelationshipCounter({
 
     return () => clearInterval(interval);
 
-  }, [startDate]);
+  }, []);
 
   return (
     <div className="w-full py-12 px-4">
-      
+
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-accent">
         {t('counter.title', language)}
       </h2>
 
-      {/* ✅ TEXTO CORRIGIDO */}
       <p className="text-center text-foreground/70 mb-8">
         Desde 7 de agosto de 2025
       </p>
