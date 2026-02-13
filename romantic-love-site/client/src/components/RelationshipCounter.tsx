@@ -13,8 +13,13 @@ interface RelationshipCounterProps {
   startDate?: Date;
 }
 
-export function RelationshipCounter({ startDate = new Date('2023-06-15') }: RelationshipCounterProps) {
+// ✅ DATA CORRIGIDA
+export function RelationshipCounter({ 
+  startDate = new Date('2025-08-07T00:00:00') 
+}: RelationshipCounterProps) {
+
   const { language } = useLanguage();
+
   const [time, setTime] = useState<TimeUnits>({
     days: 0,
     hours: 0,
@@ -23,6 +28,7 @@ export function RelationshipCounter({ startDate = new Date('2023-06-15') }: Rela
   });
 
   useEffect(() => {
+
     const updateTime = () => {
       const now = new Date();
       const diff = now.getTime() - startDate.getTime();
@@ -39,15 +45,19 @@ export function RelationshipCounter({ startDate = new Date('2023-06-15') }: Rela
     const interval = setInterval(updateTime, 1000);
 
     return () => clearInterval(interval);
+
   }, [startDate]);
 
   return (
     <div className="w-full py-12 px-4">
+      
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-2 text-accent">
         {t('counter.title', language)}
       </h2>
+
+      {/* ✅ TEXTO CORRIGIDO */}
       <p className="text-center text-foreground/70 mb-8">
-        Desde 15 de junho de 2023
+        Desde 7 de agosto de 2025
       </p>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-2xl mx-auto">
@@ -64,12 +74,14 @@ export function RelationshipCounter({ startDate = new Date('2023-06-15') }: Rela
             <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 to-red-500 bg-clip-text text-transparent mb-2">
               {String(item.value).padStart(2, '0')}
             </div>
+
             <div className="text-xs md:text-sm text-foreground/70 uppercase tracking-wider font-semibold">
               {item.label}
             </div>
           </div>
         ))}
       </div>
+
     </div>
   );
 }
