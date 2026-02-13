@@ -21,7 +21,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'gallery.photo4': 'Juntos para sempre',
     
     // Gallery Drawings
-    'drawings.title': 'Nossos Desenhos',
+    'drawings.title': 'Nossos Games',
     'drawings.description': 'Ilustrações que representam nossa história',
     'drawing1.title': 'Almas Gêmeas',
     'drawing1.desc': 'Dois corações unidos por um fio invisível de amor. Representam a conexão profunda entre nós, como se fossemos feitos um para o outro.',
